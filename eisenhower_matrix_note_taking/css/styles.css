@@ -1,0 +1,133 @@
+
+body{
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    box-sizing: border-box;
+}
+
+#top-container{
+    background-image: url(/images/background.webp);
+    background-clip: border-box;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    margin-bottom: 10%;
+}
+
+.nav-bar{
+    text-align: right;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.nav-item{
+    padding: 1.2rem 0.7rem;
+    font-size: 1.2rem;
+    position: relative;
+    right: 1.5rem;
+}
+
+#title{
+    position: relative;
+    font-size: 7.5rem;
+    text-align: center;
+    font-family: 'Roboto Condensed', monospace;
+    position: relative;
+    top: -10%;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.desc{
+    padding-top: 2rem;
+    font-size: 1.5rem;
+    width: 70%;
+}
+
+.headings{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 90vh;
+}
+
+#mid-container{
+    text-align: right;
+    /* margin: 5rem;
+    margin-bottom: 50rem; */
+    height: 100vh;
+    width: 100%;
+}
+
+.quads{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+}
+
+#quads-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+}
+
+#quad1-text{
+    background-color: #CBEDD5;
+}
+
+#quad2-text{
+    background-color: #A5F1E9;
+}
+
+#quad3-text{
+    background-color: #FFFBEB;
+}
+
+#quad4-text{
+    background-color: #FFE1E1;
+}
+
+.legends{
+    font-size: 1.5rem;
+    cursor: default;
+    user-select: none;
+}
+
+.text-area{
+    border-radius: 5%;
+    margin-top: 1%;
+    padding: 10px;
+    width: 35vw;
+    height: 35vh;
+    resize: none;
+}
+
+.btm-container{
+    text-align: center;
+    background-color: #66BFBF;
+    margin-top: 10%;
+    padding: 40px;
+}
+
+.footer-link{
+    padding: 10px;
+}
+
+.name{
+    padding: 5px;
+    font-size: 12px;
+}
