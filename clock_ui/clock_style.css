@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.clock{
+    margin: 0 auto;
+    width: 60%;
+    height: 100%;
+    border-radius: 5%;
+    /* position: relative;   */
+    /* background-color: rgb(1, 53, 72); */
+}
+
+.clock-face{
+    margin: 0 auto;
+    margin-top: 45px;
+    width: 75%;
+    height: 90%;
+    background-color: rgb(35, 150, 178);
+    border-radius: 50%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    box-shadow: -5px 1px 15px rgb(0, 0, 0);
+}
+
+.dot{
+    position: absolute;
+    background-color: rgb(77, 105, 115);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    left: 47.5%;
+    bottom: 47.5%;
+    z-index: 4;
+    box-shadow: -3px 1px 15px rgb(1, 50, 69);
+}
+
+.hour-container{
+    width: 100%;
+    height: 100%;
+    /* background-color: yellow; */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+}
+
+.minute-container{
+    width: 100%;
+    height: 100%;
+    /* background-color: yellow; */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+}
+
+.seconds-container{
+    width: 100%;
+    height: 100%;
+    /* background-color: yellow; */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+}
+
+.hour-hand{
+    position: absolute;
+    width: 30px;
+    height: 30%;
+    background-color: whitesmoke;
+    bottom: 50%;
+    transform-origin: 50% 100%;
+    animation: cone 216000s linear infinite ;
+    box-shadow: -3px 1px 15px rgb(1, 50, 69);
+}
+.minute-hand{
+    position: absolute;
+    width: 20px;
+    height: 45%;
+    background-color: whitesmoke;
+    bottom: 50%;
+    transform-origin: 50% 100%;
+    animation: cone 3600s linear infinite ;
+    box-shadow: -3px 1px 15px rgb(1, 50, 69);
+}
+.seconds-hand{
+    position: absolute;
+    width: 10px;
+    height: 60%;
+    background-color: whitesmoke;
+    bottom: 37%;
+    transform-origin: 50% 79%;
+    animation: cone 60s linear infinite;
+    box-shadow: -4px 1px 15px rgb(1, 50, 69);
+}
+
+.cone{
+    width: 200%;
+    height: 200%;
+
+    background-image: conic-gradient(rgb(215, 232, 238), rgb(188, 205, 205), rgb(22, 111, 123));
+    
+    animation: cone 5s linear infinite ;
+}
+
+@keyframes cone {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

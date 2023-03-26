@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Fredoka+One&family=Oswald&family=Roboto+Condensed&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+h1{
+    position: absolute;
+    top: 45%;
+    right: 23%;
+    z-index: 1;
+    font-size: 55px;
+    letter-spacing: 0.5px;
+}
+
+.loud-txt{
+    font-size: 75px;
+}
+
+.tick{
+    color: whitesmoke;
+    text-shadow: 1px 3px 3px black;
+}
+
+.container{
+    position: absolute;
+    z-index: 0;
+    overflow: hidden;
+    width: 150%;
+    height: 150%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(1.15);
+}
+
+.cone{
+    width: 200%;
+    height: 200%;
+
+    background-image: conic-gradient(rgb(215, 232, 238), rgb(188, 205, 205), rgb(134, 185, 192),rgb(76, 141, 158));
+    
+    animation: cone 5s linear infinite ;
+}
+
+@keyframes cone {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

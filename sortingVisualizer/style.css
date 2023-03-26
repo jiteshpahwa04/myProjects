@@ -1,0 +1,35 @@
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.array-container{
+    margin: 100px auto 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    /* position: absolute;
+    left: 100px; */
+}
+
+.array-bar{
+    width: 4px;
+    background-color: cyan;
+    display: inline-block;
+    margin: 0 2px;
+    /* transition: 2s; */
+}
+
+.active{
+    background-color: red;
+}
+
+.green{
+    background-color: greenyellow;
+}
+
+button{
+    margin: 10px;
+}
