@@ -9,7 +9,7 @@ function createNewArray(){
     for(let i=0;i<200;i++){
         const rect = document.createElement('div');
         rect.className="array-bar";
-        let randHeight = Math.floor(Math.random()*(700 - 5 +1) + 5);
+        let randHeight = Math.floor(Math.random()*(700 - 25 +1) + 25);
         unsortedArr.push(randHeight);
         rect.style.height = `${randHeight}px`;
         container.appendChild(rect);

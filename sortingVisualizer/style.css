@@ -1,12 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .wrapper{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: black;
+    height: 100vh;
+    gap: 20px;
+}
+
+h1{
+    font-size: 70px;
+    color: white;
 }
 
 .array-container{
-    margin: 100px auto 0 auto;
+    margin: 0 auto 0 auto;
     display: flex;
     justify-content: center;
     align-items: baseline;
@@ -15,8 +29,8 @@
 }
 
 .array-bar{
-    width: 4px;
-    background-color: cyan;
+    width: 5px;
+    background-color: yellow;
     display: inline-block;
     margin: 0 2px;
     /* transition: 2s; */
@@ -27,9 +41,24 @@
 }
 
 .green{
-    background-color: greenyellow;
+    background-color: brown;
 }
 
 button{
     margin: 10px;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btn{
+    padding: 8px 12px;
+    border-radius: 10px;
+    background-color: rgb(69, 69, 69);
+    color: white;
+    font-size: 15px;
 }
