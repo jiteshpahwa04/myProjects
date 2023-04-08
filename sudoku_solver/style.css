@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-image: url("background.jpg");
+    background-color: beige;
+    background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 45%;
+}
+
+h1{
+    font-size: 70px;
+    color: black;
+    background-color: white;
+    border: 5px solid black;
+    border-radius: 15px;
+    padding: 12px 15px;
+}
+
+.container{
+    height: 600px;
+    width: 600px;
+    display: grid;
+    grid-template-rows: repeat(9, 1fr);
+    grid-template-columns: repeat(9, 1fr);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    /* border: 4px 5px 4px 4px solid black;  */
+}
+
+input{
+    all: unset;
+    width: 100%;
+    font-size: 35px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    text-align: center;
+    /* box-shadow: inset 1px 1px 0px black; */
+    border: 1px solid black;
+}
+
+.border-left{
+    box-shadow: inset 2px 0 0px black;
+}
+.border-bottom{
+    box-shadow: inset 0px -2px 0px black;
+}
+.border-bottom-left{
+    box-shadow: inset 2px -2px 0px black;
+}
+
+.noClues{
+    color: beige;
+}
+.wrongInput{
+    border: 1px solid red;
+    box-shadow: inset 0 0 10px red;
+    color: red;
+}
+
+.finalMatrix{
+    pointer-events: none;
+}
+
+.btn{
+    padding: 8px 12px;
+    border-radius: 15px;
+    font-size: 25px;
+    font-weight: bold;
+    border: 3px solid black;
+    cursor: pointer;
+}
+.btn:active{
+    transform: translateY(2px);
+}
+.btn-container{
+    width: 600px;
+    display: flex;
+    justify-content: space-evenly;
+}
