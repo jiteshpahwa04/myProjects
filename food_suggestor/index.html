@@ -10,19 +10,40 @@
 <body>
 
     <div class="wrapper">
-        <h1 class="heading">Food Suggestor</h1>
-    
-        <div class="container">
-            <div class="intro">
-                <h2 id="foodName"></h2>
-                <img id="foodImage"></img>
+        <div class="heading">
+            <h1 class="heading-text">Food Suggestor</h1>
+
+            <div class="input-container">
+                <input type="text" name="" id="search-food" placeholder="What are you making today?">
+                <input type="text" name="" id="search-food-ingredient" placeholder="Try searching the Ingredient">
             </div>
-            <hr class="line">
-            <span class="topic">Ingredients: </span> <span id="foodIngredients" class="content"></span>
-            <hr class="line">
-            <span class="topic">Method: </span>
-            <div id="foodInstructions" class="content"></div>
+
         </div>
+
+        <div class="info-container">
+
+            <div id="food_categories"></div>
+
+            <div class="container">
+                <div class="error">
+                    <h2>No Recipie Avalaible for this search. Try something else &#128516;</h2>
+                </div>
+                <div class="intro">
+                    <h2 id="foodName" class="topic"></h2>
+                    <img id="foodImage"></img>
+                </div>
+                <hr class="line">
+                <span class="topic">Ingredients: </span> <span id="foodIngredients" class="content"></span>
+                <hr class="line">
+                <span class="topic">Method: </span>
+                <div id="foodInstructions" class="content"></div>
+            </div>
+
+            <div id="ingredient-search-results"></div>
+
+        </div>
+
+        <button onclick="displayFood()" class="random_button">Show Random</button>
     </div>
     
     <script src="script.js"></script>

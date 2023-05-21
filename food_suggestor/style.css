@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto+Slab:wght@300&display=swap');
 
 *{
     box-sizing: border-box;
@@ -11,10 +11,11 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 30px;
     padding-top: 50px;
+    padding-bottom: 50px;
     overflow-x: hidden;
+    position: relative;
 }
 
 .container{
@@ -23,8 +24,14 @@
     gap: 20px;
     width: 50%;
     padding: 20px;
+    margin: 0 auto;
 
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.heading-text{
+    font-size: 3.3rem;
+    font-family: 'Poppins', sans-serif;
 }
 
 .intro{
@@ -34,7 +41,31 @@
 }
 
 .heading{
-    font-size: 50px;
+    display: flex;
+    gap: 60px;
+    font-size: 30px;
+    padding-left: 30px;
+    position: relative;
+}
+.heading>.input-container{
+    position: absolute;
+    width: 50%;
+    left: 25%;
+    height: 100%;
+
+    display: flex;
+    justify-content: space-between;
+}
+.input-container>input{
+    width: 49.5%;
+    height: 100%;
+
+    padding: 20px;
+    border: 3px solid lightgray;
+    border-radius: 10px;
+    font-size: 30px;
+}::placeholder{
+    font-size: 30px;
 }
 
 .topic{
@@ -51,11 +82,75 @@
     border-top: 1px solid rgb(217, 217, 217);
 }
 
+.error{
+    display: none;
+}
+
+.active{
+    display: block;
+}
+
+.random_button{
+    all: unset;
+    margin: 0 auto;
+    width: 20%;
+    padding: 12px 8px;
+    font-size: 30px;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.random_button:active{
+    transform: translateY(2px);
+}
+
 #foodName{
     font-size: 40px;
+    font-family: 'Poppins', sans-serif;
 }
 
 #foodImage{
     max-width: 400px;
     border-radius: 8px;
+}
+
+#food_categories{
+    position: absolute;
+    width: 25%;
+    padding: 0 10px;
+    padding-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: 'Roboto Slab', serif;
+}
+.card{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    cursor: pointer;
+}
+.card-img{
+    max-width: 100px;
+}
+
+.info-container{
+    position: relative;
+    display: flex;
+}
+
+#ingredient-search-results{
+    position: absolute;
+    right: 0;
+    width: 25%;
+    padding: 0 10px;
+    padding-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: 'Roboto Slab', serif;
 }
