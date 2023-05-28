@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    padding: 120px;
+}
+.wrapper>h1{
+    font-size: 60px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+.container{
+    max-width: 60%;
+    padding: 20px;
+    font-size: 25px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.container>input{
+    all:unset;
+    opacity: 0;
+    position: absolute;
+}
+
+#pg{
+    color: gray;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}::selection{
+    background-color: gray;
+    color: white;
+}
+.active{
+    color: black;
+    text-decoration: underline;
+}
+.correct{
+    background-color: rgb(200, 255, 200);
+    color: rgb(0, 104, 0);
+}
+.incorrect{
+    background-color: rgb(254, 223, 223);
+    color: rgb(158, 0, 0);
+}
+
+.results-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    font-weight: 600;
+}
+
+.result{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.quantities{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.value{
+    font-size: 50px;
+}
+
+.reset-btn{
+    margin: 0 auto;
+    all: unset;
+    cursor: pointer;
+    padding: 8px 40px;
+    font-size: 30px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.reset-btn:hover{
+    color: white;
+    background-color: black;
+    transition: 0.4s;
+}
+.reset-btn:active{
+    transform: scale(1.1);
+}
+
+#myChart{
+    max-width: 1000px;
+    max-height: 250px;
+}

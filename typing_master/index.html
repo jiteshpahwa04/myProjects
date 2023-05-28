@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Master</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="wrapper">
+        <h1>Typing Master</h1>
+
+        <div class="container">
+
+            <input type="text" class="textinput">
+
+            <p id="pg">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque obcaecati amet doloribus fuga autem modi porro, impedit necessitatibus assumenda magnam reprehenderit explicabo fugit provident optio officia accusamus laboriosam dolorem ipsa debitis tempore! Similique, quaerat minus! Ab eaque praesentium ipsa recusandae quas deserunt, ea minus sed, tempora doloribus laborum. Eaque cumque, commodi vel quos molestias natus. Sint dolor totam consequuntur, minima magni ipsa aspernatur iste perspiciatis ut velit impedit voluptatum quos quaerat. Expedita a laboriosam rerum natus, nisi doloribus, fuga dolore nemo earum vel placeat architecto aspernatur perspiciatis vero quia veniam deleniti, dolorum autem vitae delectus. Sapiente veniam quod provident fugiat.
+            </p>
+
+            <div class="results-container">
+                <div class="result">
+                    <div class="time quantities">
+                        <span class="value">0</span>
+                        <p>Time(sec)</p>
+                    </div>
+
+                    <div class="wpm quantities">
+                        <span class="value">0</span>
+                        <p>WPM</p>
+                    </div>
+
+                    <div class="mistake quantities">
+                        <span class="value">0</span>
+                        <p>Mistakes</p>
+                    </div>
+
+                    <div class="cpm quantities">
+                        <span class="value">0</span>
+                        <p>CPM</p>
+                    </div>
+                </div>
+                <button class="reset-btn">Restart</button>
+
+            </div>
+            <canvas id="myChart" hidden></canvas>
+        </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
