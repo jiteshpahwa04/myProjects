@@ -1,0 +1,25 @@
+.input-container{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+.add-icon{
+    color: grey;
+    /* position: absolute;
+    right: 10px; */
+    cursor: pointer;
+}
+input:focus{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+button:focus{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.DatePicker{
+    background-image: url(https://tea.texas.gov/sites/default/files/blue-calendar-icon.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    /* zoom: 1.2; */
+}
