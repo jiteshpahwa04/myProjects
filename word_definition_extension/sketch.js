@@ -1,5 +1,5 @@
 // Wordnik API key:
-// let api_key = '/?api_key=48dd829661f515d5abc0d03197a00582e888cc7da2484d5c7'
+// let api_key = '/?api_key=<api_key>'
 
 function capitalizeFirstLetter(string) {
   return string.charAt(0).toUpperCase() + string.slice(1);
