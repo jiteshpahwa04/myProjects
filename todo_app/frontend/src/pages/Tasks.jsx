@@ -10,6 +10,8 @@ import {BsExclamationLg} from "react-icons/bs";
 import "./Task.css";
 import DatePicker from "react-datepicker";
 import 'react-datepicker/dist/react-datepicker.module.css'
+import { useDispatch, useSelector } from "react-redux";
+import { addToTasks } from "../redux/Slices/TaskSlice";
 
 function Tasks() {
   const [loading, setLoading] = useState(false);
@@ -42,7 +44,6 @@ function Tasks() {
       );
 
       console.log(task._id);
-
       fetchAllTasks();
       toast.success("Task Deleted");
     } catch (err) {
@@ -66,8 +67,11 @@ function Tasks() {
       );
 
       const data = await res.json();
-      console.log(data.tasks);
-      setTaskList(data.tasks);
+      const tasks = data.tasks;
+      for(var i=0;i<tasks.length;i++){
+        dispatch(addToTasks(tasks[i]))
+      }
+      setTaskList(tasks);
     } catch (err) {
       console.error(err);
       console.log(err);

@@ -4,6 +4,7 @@ import { AiFillDelete } from "react-icons/ai";
 import { VscDebugRestart } from "react-icons/vsc";
 import { HiPencilSquare } from "react-icons/hi2";
 import { toast } from "react-hot-toast";
+import { useDispatch, useSelector } from "react-redux";
 
 function Card({ task, taskList, deleteTask, editTask }) {
   const [completedList, setCompletedList] = useState([]);
@@ -30,7 +31,7 @@ function Card({ task, taskList, deleteTask, editTask }) {
       );
       // const newList = taskList;
       // newList.push(task);
-      console.log(task);
+      // console.log(task);
     } catch (err) {
       console.error(err);
       console.log(err);
